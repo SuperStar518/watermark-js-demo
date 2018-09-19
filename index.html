@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>watermark.js - demo by RobJS</title>
+    <script src="./scripts/watermark.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab|Maven+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center text-primary">watermark.js</h1>
+        <div class="col-xs-12">
+            <div class="example" id="center-placed">
+                <h2>Center</h2>
+                <pre>
+                    <code class="javascript">
+    watermark(['./img/{YOUR_IMAGE}.jpg'])
+    .image(text.center('KINDY', '60px serif', 'green', 0.5))
+    .then(function (img) {
+        document.getElementById('center-placed').appendChild(img);
+    });
+                    </code>
+                </pre>
+            </div>
+
+            <div class="example" id="lower-left">
+                <h2>Lower Left</h2>
+                <pre>
+                    <code class="javascript">
+    watermark(['./img/{YOUR_IMAGE}.jpg'])
+    .image(text.lowerLeft('watermark.js', '60px Josefin Slab', 'red', 0.5))
+    .then(function (img) {
+        document.getElementById('lower-left').appendChild(img);
+    });
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/custom.js"></script>
+</body>
+
+</html>
